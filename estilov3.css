@@ -1,0 +1,141 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    padding: 0;  
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 170px;
+    position: absolute;
+    top: 0;
+    margin-left: 2%;
+}
+#menu {
+    float: right;
+    margin-right: 5%;
+    list-style: none;
+    margin-top: 9px;
+    color: white;
+}
+h3, h4 {
+    text-transform: uppercase;
+}
+li:hover {
+    background-color: #74276D;
+}
+li {
+    float: left;
+    padding: 10 5 10 5;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+#imagem_fundo{
+    background: url(fundo.jpg);
+    height: 100%;
+    text-align: center;
+    background-size: cover;
+}
+#titulo {
+    color: rgb(44, 2, 2);
+    padding-top: 20%;
+    font-size: 70px;
+    line-height: 0.6;
+}
+#subtitulo {
+    color: rgb(44, 2, 2);
+    border-top: 3px solid white;
+    margin: 0 20% 0 20%;
+}
+#acao {
+    color: red;
+    border: 1px black solid;
+    padding: 4px 10px 5px 10px;
+}
+#selecao {
+    padding: 20px;
+}
+#refe {
+    color: blue;
+    border: 1px black solid;
+    padding: 4px 10px 5px 10px;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.icone {
+    width: 81px;
+    padding: 30 0 0 0;
+}
+#coluna2 {
+    float: right;
+    padding: 0 5%;
+    position: relative;
+    width: 30%;
+}
+.coluna {
+    float: left;
+    padding: 0 5%;
+    position: relative;
+}
+.dois {
+    width: 40%;
+}      
+.tres {
+    width: 29%;
+    padding: 0 2%;
+}
+.quatro {
+    width: 15%;
+}
+.justificado {
+    text-align: justify;
+}
+.centralizado {
+    text-align: center;
+}
+.destaque {
+    background-color: #f7f7f7;
+}
+.imgeco {
+    width: 80%;
+    height: 40%;
+}
+footer {
+    background-color: #74276D;
+    float: left;
+    width: 100%;
+    color: white;
+}
+@media all and (max-width: 768px) {
+    #menu {
+     visibility: hidden;   
+    }
+    .coluna, .dois, .tres, .quatro {
+        display: block;
+        width: 80%;
+        padding: 0;
+        margin: 10px auto;
+        float: none;
+    }
+    #logodiv {
+        width: 100%;
+        margin: left;
+        position: relative;
+        text-align: center;
+   }
+   #logo {
+       transform: translateX(-50%);
+   }
+}
